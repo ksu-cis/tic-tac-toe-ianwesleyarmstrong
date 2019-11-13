@@ -72,3 +72,9 @@ for (i = 0; i < cells.length; i++) {
 }
 
 setTurn();
+
+var form = document.getElementById("board");
+var cells = document.getElementsByClassName("cell");
+for (i = 0; i < cells.length; i++) {
+    cells[i].addEventListener("click", onClick);
+}
